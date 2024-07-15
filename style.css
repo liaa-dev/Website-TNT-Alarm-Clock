@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("fonts/Comfortaa-Regular.ttf");
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Comfortaa";
+}
+
+#main_container {
+    width: 360px;
+    height: 640px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h {
+    color: #3BC34E;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#desc {
+    font-size: 24px;
+    text-align: center;
+}
+
+#btn_next {
+    border: none;
+    background: none;
+}
+
+#btn_next:active {
+    outline: none;
+    filter: invert(64%) sepia(18%) saturate(1685%) hue-rotate(77deg) brightness(95%) contrast(88%);
+    transform: translateX(2px);
+}
+
+#btn_next:hover {
+    outline: none;
+    filter: invert(64%) sepia(18%) saturate(1685%) hue-rotate(77deg) brightness(95%) contrast(88%);
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}

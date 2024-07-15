@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/style_setup2.css">
+</head>
+<body>
+    <div id="main_container">
+        <h>Setup</h>
+        <div id="desc">Please enter the<br>password.</div>
+        <form action="#">
+            <input type="text" id="ssid" name="ssid" value="Network 1" readonly>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="submit" value="Connect">
+        </form>
+        <div id="status">Waiting...</div>
+        <div id="buttons_back_next">
+            <button id="btn_next" onclick="window.location.href='setup_1.html'">
+                <img src="../../images/double_arrow_left_48.png" alt="Back"/>
+            </button>
+            <button id="btn_next" onclick="window.location.href='setup_3.html'">
+                <img src="../../images/double_arrow_right_48.png" alt="Next"/>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
