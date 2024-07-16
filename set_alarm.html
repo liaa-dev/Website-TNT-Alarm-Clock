@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_set_alarm.css">
+</head>
+<body>
+    <div id="main_container">
+        <h>Set alarm</h>
+        <form action="#">
+            <input type="time" id="time" name="time">
+            <input type="text" id="reason" name="reason" placeholder="Reason...">
+            <div>Try to wake me up <input type="button" id="repeats" name="repeats" value="3"> times,</div>
+            <div>every <input type="button" id="repeat_after" name="repeat_after" value="10"> minutes.</div>
+            <div id="btns">
+                <input type="button" id="mon" name="mon" value="Mon">
+                <input type="button" id="tue" name="tue" value="Tue">
+                <input type="button" id="wed" name="wed" value="Wed">
+                <input type="button" id="thu" name="thu" value="Thu">
+                <input type="button" id="fri" name="fri" value="Fri">
+                <input type="button" id="sat" name="sat" value="Sat">
+                <input type="button" id="sun" name="sun" value="Sun">
+                <input type="button" id="today" name="today" value="Today">
+                <button id="btn_next" onclick="myFunc()"> <!-- onclick doesnt work in a form need to fix that :/ -->
+                    <img src="../../images/double_arrow_left_48.png" alt="Back"/>
+                </button>
+                <input type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    function myFunc() {
+        window.location.href = "index.html"; // Doesnt work need to fix
+    }
+</script>
